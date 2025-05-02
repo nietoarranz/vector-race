@@ -2,6 +2,13 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import Button from 'primevue/button'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function startRace() {
+  router.push('/race')
+}
 </script>
 
 <template>
