@@ -1,3 +1,10 @@
+<template>
+  <RouterView />
+  <Toast />
+</template>
+
+<style scoped></style>
+
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
@@ -11,24 +18,7 @@ function startRace() {
 }
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <Button label="Empezar carrera" icon="pi pi-flag" @click="startRace" />
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
-</template>
-
+<!--
 <style scoped>
 header {
   line-height: 1.5;
@@ -92,3 +82,20 @@ nav a:first-of-type {
   }
 }
 </style>
+Arvhive of the original code
+======================================================================
+<header>
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" />
+
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+        <Button label="Empezar carrera" icon="pi pi-flag" @click="startRace" />
+      </nav>
+    </div>
+  </header>
+
+-->
